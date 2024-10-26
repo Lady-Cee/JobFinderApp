@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../message/pages/message_view.dart';
@@ -7,6 +6,8 @@ import '../../setting/pages/setting_view.dart';
 import 'home_view.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   State<HomePage> createState() => _HomePageState();
 }
@@ -14,10 +15,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
  // const HomePage({super.key});
   var listOfPages = [
-    HomeView(),
-    MessageView(),
-    ProfileView(),
-    SettingView(),
+    const HomeView(),
+    const MessageView(),
+    const ProfileView(),
+    const SettingView(),
   ];
 
   var selectedIndex = 0;
@@ -26,8 +27,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: IndexedStack(
-        children: listOfPages,
         index: selectedIndex,
+        children: listOfPages,
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
@@ -40,7 +41,7 @@ class _HomePageState extends State<HomePage> {
             selectedIndex = value;
           });
         },
-        items: [
+        items: const [
           BottomNavigationBarItem(
               icon: Icon(Icons.home_filled),
             label: "Home",

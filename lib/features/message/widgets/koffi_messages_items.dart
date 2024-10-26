@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class KoffiMessagesItems extends StatelessWidget {
@@ -19,16 +18,16 @@ class KoffiMessagesItems extends StatelessWidget {
                 color: Colors.grey.shade200,
                 borderRadius: BorderRadius.circular(8)
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left:16.0, top:8.0),
+                  padding: EdgeInsets.only(left:16.0, top:8.0),
                   child: Text("Hello", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                 ),
                 SizedBox(height: 8,),
                 Padding(
-                  padding: const EdgeInsets.only(left:35.0),
+                  padding: EdgeInsets.only(left:35.0),
                   child: Text("4.34PM"),
                 ),
               ],
@@ -45,16 +44,16 @@ class KoffiMessagesItems extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(8)
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left:16.0, top:8.0),
+                  padding: EdgeInsets.only(left:16.0, top:8.0),
                   child: Text("Hi", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                 ),
                 SizedBox(height: 8,),
                 Padding(
-                  padding: const EdgeInsets.only(left:35.0),
+                  padding: EdgeInsets.only(left:35.0),
                   child: Text("4.34PM"),
                 ),
               ],
@@ -71,16 +70,16 @@ class KoffiMessagesItems extends StatelessWidget {
                 color: Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(8)
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left:16.0, top:8.0),
+                  padding: EdgeInsets.only(left:16.0, top:8.0),
                   child: Text("How are you?", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                 ),
                 SizedBox(height: 8,),
                 Padding(
-                  padding: const EdgeInsets.only(left:85.0),
+                  padding: EdgeInsets.only(left:85.0),
                   child: Text("4.35PM"),
                 ),
               ],
@@ -97,16 +96,16 @@ class KoffiMessagesItems extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(8)
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left:16.0, top:8.0),
+                  padding: EdgeInsets.only(left:16.0, top:8.0),
                   child: Text("Nice, bro", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                 ),
                 SizedBox(height: 8,),
                 Padding(
-                  padding: const EdgeInsets.only(left:35.0),
+                  padding: EdgeInsets.only(left:35.0),
                   child: Text("4.34PM"),
                 ),
               ],
@@ -123,16 +122,16 @@ class KoffiMessagesItems extends StatelessWidget {
                 color: Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(8)
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left:16.0, top:8.0),
+                  padding: EdgeInsets.only(left:16.0, top:8.0),
                   child: Text("I heard you guys are launching new product?", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                 ),
                 SizedBox(height: 8,),
                 Padding(
-                  padding: const EdgeInsets.only(left:150.0),
+                  padding: EdgeInsets.only(left:150.0),
                   child: Text("4.35PM"),
                 ),
               ],
@@ -149,16 +148,16 @@ class KoffiMessagesItems extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(8)
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left:16.0, top:8.0),
+                  padding: EdgeInsets.only(left:16.0, top:8.0),
                   child: Text("Yes, it is called JobFinder", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                 ),
                 SizedBox(height: 8,),
                 Padding(
-                  padding: const EdgeInsets.only(left:140.0),
+                  padding: EdgeInsets.only(left:140.0),
                   child: Text("4.34PM"),
                 ),
               ],
@@ -175,16 +174,16 @@ class KoffiMessagesItems extends StatelessWidget {
                 color: Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(8)
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left:16.0, top:8.0),
+                  padding: EdgeInsets.only(left:16.0, top:8.0),
                   child: Text("That's awesome", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
                 ),
                 // SizedBox(height: 8,),
                 Padding(
-                  padding: const EdgeInsets.only(left:130.0),
+                  padding: EdgeInsets.only(left:130.0),
                   child: Text("4.34PM"),
                 ),
               ],

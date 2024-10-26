@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:job_finder_app/features/message/widgets/koffis_messages.dart';
 
@@ -11,7 +10,7 @@ class MessageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text("Message")),
+        title: const Center(child: Text("Message")),
         actions: [
           IconButton(
           onPressed: (){},
@@ -25,42 +24,42 @@ class MessageView extends StatelessWidget {
             MessageViewDetails(
              title: "Tamaris Johanness",
                 subtitle: "A wonderful event occur...",
-              leadingIcon: CircleAvatar(
+              leadingIcon: const CircleAvatar(
                 radius: 25,
                 backgroundImage: AssetImage("assets/images/message_images/pix1.jpg"),
               ),
 
               trailingIcon: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.blue,
                 ),
-                padding: EdgeInsets.all(12),
-                child: Text("2", style: TextStyle(color: Colors.white),),
+                padding: const EdgeInsets.all(12),
+                child: const Text("2", style: TextStyle(color: Colors.white),),
               ),
 
             ),
             MessageViewDetails(
               title: "Koffis Mensah",
               subtitle: "Tell me more",
-              leadingIcon: CircleAvatar(
+              leadingIcon: const CircleAvatar(
                 radius: 25,
                 backgroundImage: AssetImage("assets/images/message_images/pix2.png"),
               ),
 
               trailingIcon: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.blue,
                 ),
-                padding: EdgeInsets.all(12),
-                child: Text("1", style: TextStyle(color: Colors.white),),
+                padding: const EdgeInsets.all(12),
+                child: const Text("1", style: TextStyle(color: Colors.white),),
               ),
               onTap: (){
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder:(context){
-                      return KoffisMessage();
+                      return const KoffisMessage();
                     })
                 );
               },
@@ -68,7 +67,7 @@ class MessageView extends StatelessWidget {
 
 
             ),
-            MessageViewDetails(
+            const MessageViewDetails(
               title: "Roberto Manes",
               subtitle: "We have to sort out how to fix...",
               leadingIcon: CircleAvatar(
@@ -76,7 +75,7 @@ class MessageView extends StatelessWidget {
                 backgroundImage: AssetImage("assets/images/message_images/pix4.png"),
               ),
             ),
-            MessageViewDetails(
+            const MessageViewDetails(
               title: "Monalisa Manafs",
               subtitle: "The capstone project is giving...",
               leadingIcon: CircleAvatar(
@@ -87,12 +86,12 @@ class MessageView extends StatelessWidget {
             MessageViewDetails(
               title: "Harrison",
               subtitle: "I will be able to carry... ",
-              leadingIcon: CircleAvatar(
+              leadingIcon: const CircleAvatar(
                 radius: 25,
                 backgroundImage: AssetImage("assets/images/message_images/h.png"),
               ),
               trailingIcon: Container(
-                padding: EdgeInsets.all(12),
+                padding: const EdgeInsets.all(12),
                 width: 60,
                 height: 40,
                 decoration: BoxDecoration(
@@ -106,7 +105,7 @@ class MessageView extends StatelessWidget {
               ),
 
             ),
-            MessageViewDetails(
+            const MessageViewDetails(
               title: "Christiano Robert",
               subtitle: "This mini project, no comment..",
               leadingIcon: CircleAvatar(
@@ -114,7 +113,7 @@ class MessageView extends StatelessWidget {
                 backgroundImage: AssetImage("assets/images/message_images/pix5.png"),
               ),
             ),
-            MessageViewDetails(
+            const MessageViewDetails(
               title: "Mario Muna",
               subtitle: " My birthday is soon, I have ...",
               leadingIcon: CircleAvatar(
@@ -122,7 +121,7 @@ class MessageView extends StatelessWidget {
                 backgroundImage: AssetImage("assets/images/message_images/m.png"),
               ),
             ),
-            MessageViewDetails(
+            const MessageViewDetails(
               title: "Cynthia",
               subtitle: "I am so excited that I am doing ...",
               leadingIcon: CircleAvatar(
@@ -130,7 +129,7 @@ class MessageView extends StatelessWidget {
                 backgroundImage: AssetImage("assets/images/message_images/c.png"),
               ),
             ),
-            MessageViewDetails(
+            const MessageViewDetails(
               title: "Julianne Quamba",
               subtitle: " Yu should find a way to ...",
               leadingIcon: CircleAvatar(

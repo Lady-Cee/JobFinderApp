@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RecentPostDetails extends StatelessWidget {
@@ -25,9 +24,9 @@ class RecentPostDetails extends StatelessWidget {
               child: image,
 
             ),
-            title: Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),),
-            subtitle: Text("Full Time", style: TextStyle(color: Colors.grey, fontSize: 12),),
-            trailing: Text("\$4500/m", style: TextStyle(color: Colors.grey, fontSize: 12),),
+            title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),),
+            subtitle: const Text("Full Time", style: TextStyle(color: Colors.grey, fontSize: 12),),
+            trailing: const Text("\$4500/m", style: TextStyle(color: Colors.grey, fontSize: 12),),
           )
         ],
       ),

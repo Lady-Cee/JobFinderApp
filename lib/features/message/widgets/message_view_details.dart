@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MessageViewDetails extends StatelessWidget {
@@ -21,7 +20,7 @@ class MessageViewDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(8),
+      margin: const EdgeInsets.all(8),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
         color: Colors.white,
@@ -32,8 +31,8 @@ class MessageViewDetails extends StatelessWidget {
           ListTile(
             leading: leadingIcon,
 
-            title: Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),),
-            subtitle: Text(subtitle, style: TextStyle(color: Colors.grey),),
+            title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),),
+            subtitle: Text(subtitle, style: const TextStyle(color: Colors.grey),),
             trailing: trailingIcon,
               // padding: EdgeInsets.all(12),
               // child: Text(title1!, style: TextStyle(color: Colors.white),),

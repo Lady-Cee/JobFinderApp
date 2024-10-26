@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeSearchItems extends StatelessWidget {
@@ -20,7 +19,7 @@ class HomeSearchItems extends StatelessWidget {
             leading: Container(
               child: Image.asset("assets/images/register_images/fbLogo.png"),
             ),
-            title: Column(
+            title: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -37,13 +36,13 @@ class HomeSearchItems extends StatelessWidget {
             trailing: Column(
               children: [
                 Image.asset("assets/images/home_images/heart.png", width: 20, ),
-                SizedBox(height: 15,),
-                Text("06h", style: TextStyle(color: Colors.grey, fontSize: 13),),
+                const SizedBox(height: 15,),
+                const Text("06h", style: TextStyle(color: Colors.grey, fontSize: 13),),
               ],
             ),
           ),
         ),
-        SizedBox(height: 20,),
+        const SizedBox(height: 20,),
         Container(
           decoration: BoxDecoration(
               color: Colors.white,
@@ -54,7 +53,7 @@ class HomeSearchItems extends StatelessWidget {
             leading: Container(
               child: Image.asset("assets/images/home_images/dribble.png"),
             ),
-            title: Column(
+            title: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -71,13 +70,13 @@ class HomeSearchItems extends StatelessWidget {
             trailing: Column(
               children: [
                 Image.asset("assets/images/home_images/heart.png", width: 20, ),
-                SizedBox(height: 15,),
-                Text("12h", style: TextStyle(color: Colors.grey, fontSize: 13),),
+                const SizedBox(height: 15,),
+                const Text("12h", style: TextStyle(color: Colors.grey, fontSize: 13),),
               ],
             ),
           ),
         ),
-        SizedBox(height: 20,),
+        const SizedBox(height: 20,),
         Container(
           decoration: BoxDecoration(
               color: Colors.white,
@@ -88,7 +87,7 @@ class HomeSearchItems extends StatelessWidget {
             leading: Container(
               child: Image.asset("assets/images/register_images/googleLogo.png"),
             ),
-            title: Column(
+            title: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -105,13 +104,13 @@ class HomeSearchItems extends StatelessWidget {
             trailing: Column(
               children: [
                 Image.asset("assets/images/home_images/heart.png", width: 20, ),
-                SizedBox(height: 15,),
-                Text("24h", style: TextStyle(color: Colors.grey, fontSize: 13),),
+                const SizedBox(height: 15,),
+                const Text("24h", style: TextStyle(color: Colors.grey, fontSize: 13),),
               ],
             ),
           ),
         ),
-        SizedBox(height: 20,),
+        const SizedBox(height: 20,),
         Container(
           decoration: BoxDecoration(
               color: Colors.white,
@@ -122,7 +121,7 @@ class HomeSearchItems extends StatelessWidget {
             leading: Container(
               child: Image.asset("assets/images/home_images/netflix.png"),
             ),
-            title: Column(
+            title: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -139,13 +138,13 @@ class HomeSearchItems extends StatelessWidget {
             trailing: Column(
               children: [
                 Image.asset("assets/images/home_images/heart.png", width: 20, ),
-                SizedBox(height: 15,),
-                Text("12h", style: TextStyle(color: Colors.grey, fontSize: 13),),
+                const SizedBox(height: 15,),
+                const Text("12h", style: TextStyle(color: Colors.grey, fontSize: 13),),
               ],
             ),
           ),
         ),
-        SizedBox(height: 20,),
+        const SizedBox(height: 20,),
         Container(
           decoration: BoxDecoration(
               color: Colors.white,
@@ -156,7 +155,7 @@ class HomeSearchItems extends StatelessWidget {
             leading: Container(
               child: Image.asset("assets/images/home_images/shopify.png"),
             ),
-            title: Column(
+            title: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
@@ -173,8 +172,8 @@ class HomeSearchItems extends StatelessWidget {
             trailing: Column(
               children: [
                 Image.asset("assets/images/home_images/heart.png", width: 20, ),
-                SizedBox(height: 15,),
-                Text("12h", style: TextStyle(color: Colors.grey, fontSize: 13),),
+                const SizedBox(height: 15,),
+                const Text("12h", style: TextStyle(color: Colors.grey, fontSize: 13),),
               ],
             ),
           ),

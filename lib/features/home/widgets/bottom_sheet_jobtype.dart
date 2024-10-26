@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BottomSheetJobtype extends StatelessWidget {
@@ -26,9 +25,9 @@ class BottomSheetJobtype extends StatelessWidget {
                 width: 110,
                 height: 50,
                // padding: EdgeInsets.all(10),
-                child: Center(child: Text("Full Time", style: TextStyle(color: Colors.grey),)),
+                child: const Center(child: Text("Full Time", style: TextStyle(color: Colors.grey),)),
               ),
-              SizedBox(width: 5,),
+              const SizedBox(width: 5,),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.lightBlue,
@@ -37,12 +36,12 @@ class BottomSheetJobtype extends StatelessWidget {
                 width: 110,
                 height: 50,
                // padding: EdgeInsets.all(20),
-                child: Center(
+                child: const Center(
                   child: Text("Part Time", style: TextStyle(color: Colors.white),
                   ),
                 ),
               ),
-              SizedBox(width: 5,),
+              const SizedBox(width: 5,),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -55,11 +54,11 @@ class BottomSheetJobtype extends StatelessWidget {
                 width: 110,
                 height: 50,
                // padding: EdgeInsets.all(20),
-                child: Center(child: Text("Contract", style: TextStyle(color: Colors.grey),)),
+                child: const Center(child: Text("Contract", style: TextStyle(color: Colors.grey),)),
               ),
             ],
           ),
-          SizedBox(height: 20,),
+          const SizedBox(height: 20,),
           Row(
             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -71,9 +70,9 @@ class BottomSheetJobtype extends StatelessWidget {
                 width: 110,
                 height: 50,
                 //padding: EdgeInsets.all(20),
-                child: Center(child: Text("Freelance", style: TextStyle(color: Colors.white),)),
+                child: const Center(child: Text("Freelance", style: TextStyle(color: Colors.white),)),
               ),
-              SizedBox(width: 5,),
+              const SizedBox(width: 5,),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white70,
@@ -86,12 +85,12 @@ class BottomSheetJobtype extends StatelessWidget {
                 width: 110,
                 height: 50,
                 // padding: EdgeInsets.all(20),
-                child: Center(
+                child: const Center(
                   child: Text("Remote", style: TextStyle(color: Colors.grey),
                   ),
                 ),
               ),
-              SizedBox(width: 5,),
+              const SizedBox(width: 5,),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -100,11 +99,11 @@ class BottomSheetJobtype extends StatelessWidget {
                 width: 110,
                 height: 50,
                 // padding: EdgeInsets.all(20),
-                child: Center(child: Text("Show All Type", style: TextStyle(color: Colors.grey),)),
+                child: const Center(child: Text("Show All Type", style: TextStyle(color: Colors.grey),)),
               ),
             ],
           ),
-          SizedBox(height: 20,),
+          const SizedBox(height: 20,),
           Row(
             children: [
               Expanded(
@@ -120,13 +119,13 @@ class BottomSheetJobtype extends StatelessWidget {
                   ),
 
                 ),
-                child: Text("Apply Filters", style: TextStyle(fontSize: 18),),
+                child: const Text("Apply Filters", style: TextStyle(fontSize: 18),),
               ),
               ),
 
             ],
           ),
-          SizedBox(height: 20,),
+          const SizedBox(height: 20,),
         ],
       ),
 

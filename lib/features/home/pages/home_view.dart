@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:job_finder_app/features/home/widgets/home_search_details.dart';
 import 'package:job_finder_app/features/home/widgets/popular_job_details.dart';
@@ -7,7 +6,7 @@ import 'package:job_finder_app/features/home/widgets/recent_post_details.dart';
 import '../widgets/popular_recent_item.dart';
 
 class HomeView extends StatelessWidget {
-  const HomeView({Key? key});
+  const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +16,7 @@ class HomeView extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Column(
             children: [
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -32,7 +31,7 @@ class HomeView extends StatelessWidget {
                     width: 50,
                   ),
                 ),
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 25,
                   backgroundColor: Colors.transparent,
                   backgroundImage: AssetImage(
@@ -41,7 +40,7 @@ class HomeView extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Row(
               children: [
                 Expanded(
@@ -57,13 +56,13 @@ class HomeView extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 GestureDetector(
                   onTap: (){
                     Navigator.push(
                         context,
                       MaterialPageRoute(builder: (context){
-                        return  HomeSearchDetails();
+                        return  const HomeSearchDetails();
                       }),
 
                     );
@@ -83,12 +82,12 @@ class HomeView extends StatelessWidget {
                 ),
               ],
             ),
-           SizedBox(height: 20),
-            PopularRecentItem(title: 'Popular Job',),
-          SizedBox(height: 20),
-            PopularJobDetails(),
-              SizedBox(height: 20),
-              PopularRecentItem(title: 'Recent Post',),
+           const SizedBox(height: 20),
+            const PopularRecentItem(title: 'Popular Job',),
+          const SizedBox(height: 20),
+            const PopularJobDetails(),
+              const SizedBox(height: 20),
+              const PopularRecentItem(title: 'Recent Post',),
               RecentPostDetails(
                 title: "UI/UX Designer",
                 image: Image.asset("assets/images/register_images/fbLogo.png"),

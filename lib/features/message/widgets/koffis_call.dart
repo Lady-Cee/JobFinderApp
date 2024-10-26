@@ -10,7 +10,7 @@ class KoffisCall extends StatelessWidget {
       body: Stack(
         children: [
     Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/message_images/pix1.jpg"),
             fit: BoxFit.cover,
@@ -23,7 +23,7 @@ class KoffisCall extends StatelessWidget {
               width: 100,
               height: 150,
               decoration: BoxDecoration(
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: AssetImage("assets/images/message_images/pix1.jpg"),
                   fit: BoxFit.cover,
                 ),
@@ -49,7 +49,7 @@ class KoffisCall extends StatelessWidget {
             ),
 
           ),
-          Positioned(
+          const Positioned(
             top: 400,
             left: 110,
               child: Column(
@@ -83,15 +83,15 @@ class KoffisCall extends StatelessWidget {
                       )
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     child:  Image.asset("assets/images/koffis_images/microphone.png", width: 20,),
                   ),
                 ),
 
-                SizedBox(width: 50,),
+                const SizedBox(width: 50,),
 
                 Image.asset("assets/images/koffis_images/circle.png", width: 40,),
-                SizedBox(width: 50,),
+                const SizedBox(width: 50,),
 
                 Container(
                   decoration: BoxDecoration(
@@ -103,7 +103,7 @@ class KoffisCall extends StatelessWidget {
                     )
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     child:  Image.asset("assets/images/koffis_images/videocall.png", width: 25,),
 
                   ),

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 //import 'package:job_finder_app/register/register_view.dart';
 
@@ -11,38 +10,38 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-          padding: EdgeInsets.only(top: 100),
+          padding: const EdgeInsets.only(top: 100),
       child: Column(
         //mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.asset("assets/images/splash_icon.jpg",),
-          SizedBox(height: 24,),
-          Text("Find a Perfect", style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+          const SizedBox(height: 24,),
+          const Text("Find a Perfect", style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
-          Text("Job Match", style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
+          const Text("Job Match", style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
-          Text("Finding your dream job is easier", style: TextStyle(color:Colors.grey, fontSize: 16),
+          const Text("Finding your dream job is easier", style: TextStyle(color:Colors.grey, fontSize: 16),
             textAlign: TextAlign.center,
           ),
-          Text("and faster with job_finder", style: TextStyle(color:Colors.grey, fontSize: 16),
+          const Text("and faster with job_finder", style: TextStyle(color:Colors.grey, fontSize: 16),
             textAlign: TextAlign.center,
           ),
-          SizedBox(height: 40,),
+          const SizedBox(height: 40,),
           TextButton(
             onPressed: () {
               Navigator.push(
                   context,
                   MaterialPageRoute(builder:(context){
-                    return RegisterPage();
+                    return const RegisterPage();
                   })
               );
             },
             style: ButtonStyle(
               padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
-                EdgeInsets.symmetric(horizontal: 32.0, vertical: 16.0), // Adjust padding as needed
+                const EdgeInsets.symmetric(horizontal: 32.0, vertical: 16.0), // Adjust padding as needed
               ),
               backgroundColor: MaterialStateProperty.all<Color>(Colors.blue.shade800),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -56,8 +55,8 @@ class SplashPage extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
 
               children: [
-                Text("Let's Get Started", style: TextStyle(color: Colors.white, fontSize:16)),
-                SizedBox(width: 28,),
+                const Text("Let's Get Started", style: TextStyle(color: Colors.white, fontSize:16)),
+                const SizedBox(width: 28,),
                 Image.asset("assets/images/right-arrow.png", width:30, height: 30, color: Colors.white)
               ],
             ),

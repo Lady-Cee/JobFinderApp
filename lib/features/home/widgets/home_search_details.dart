@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:job_finder_app/features/home/widgets/bottom_sheet_section.dart';
 
@@ -11,8 +10,8 @@ class HomeSearchDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:  Padding(
-          padding: const EdgeInsets.only(left: 60.0),
+        title:  const Padding(
+          padding: EdgeInsets.only(left: 60.0),
           child: Text("Search"),
         ),
       ),
@@ -66,7 +65,7 @@ class HomeSearchDetails extends StatelessWidget {
                             ),
                           ),
                           builder: (ctx) {
-                            return SingleChildScrollView(
+                            return const SingleChildScrollView(
                               child: BottomSheetSection()
                             );
                           },
@@ -87,8 +86,8 @@ class HomeSearchDetails extends StatelessWidget {
                   ),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.only(left:8.0),
+              const Padding(
+                padding: EdgeInsets.only(left:8.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -99,7 +98,7 @@ class HomeSearchDetails extends StatelessWidget {
                                     ],
                 ),
               ),
-              SizedBox(height: 10,),
+              const SizedBox(height: 10,),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
@@ -112,10 +111,10 @@ class HomeSearchDetails extends StatelessWidget {
                       ),
                         width: 150,
                         height: 60,
-                        padding: EdgeInsets.all(20),
-                      child: Text("Most Relevant", style: TextStyle(color: Colors.white),),
+                        padding: const EdgeInsets.all(20),
+                      child: const Text("Most Relevant", style: TextStyle(color: Colors.white),),
                     ),
-                    SizedBox(width: 25,),
+                    const SizedBox(width: 25,),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white70,
@@ -123,16 +122,16 @@ class HomeSearchDetails extends StatelessWidget {
                       ),
                       width: 150,
                       height: 60,
-                      padding: EdgeInsets.all(20),
-                      child: Text("Most Recent", style: TextStyle(color: Colors.grey),
+                      padding: const EdgeInsets.all(20),
+                      child: const Text("Most Recent", style: TextStyle(color: Colors.grey),
                     ),
                     ),
                   ],
                 ),
               ),
 
-               SizedBox(height: 15,),
-               HomeSearchItems()
+               const SizedBox(height: 15,),
+               const HomeSearchItems()
             ],
           ),
         ),

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PopularJobDetails extends StatelessWidget {
@@ -19,7 +18,7 @@ class PopularJobDetails extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(16.0),
             ),
-            padding: EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(8.0),
             height: 160,
             width: 250,
             child: Stack(
@@ -31,12 +30,12 @@ class PopularJobDetails extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Image.asset("assets/images/register_images/googleLogo.png", height: 40, width: 40,),
-                      Text("Google", style: TextStyle(color: Colors.grey),),
-                      SizedBox(height: 10,),
-                      Text("Lead Product Manager", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+                      const Text("Google", style: TextStyle(color: Colors.grey),),
+                      const SizedBox(height: 10,),
+                      const Text("Lead Product Manager", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
 
-                      SizedBox(height: 5,),
-                      Row(
+                      const SizedBox(height: 5,),
+                      const Row(
                         children: [
                           Text("\$2500/m ", style: TextStyle(fontWeight: FontWeight.bold),),
                           Text("Toronto, Canada", style: TextStyle(color: Colors.grey),)
@@ -62,13 +61,13 @@ class PopularJobDetails extends StatelessWidget {
             ),
           ),
 
-          SizedBox(width: 20,),
+          const SizedBox(width: 20,),
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(16.0),
             ),
-            padding: EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(8.0),
             height: 160,
             width: 250,
             child: Stack(
@@ -80,11 +79,11 @@ class PopularJobDetails extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Image.asset("assets/images/home_images/shopify.png", height: 40, width: 40,),
-                      Text("Shopify", style: TextStyle(color: Colors.grey),),
-                      SizedBox(height: 10,),
-                      Text("Senior UX/UI Designer", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
-                      SizedBox(height: 5,),
-                      Row(
+                      const Text("Shopify", style: TextStyle(color: Colors.grey),),
+                      const SizedBox(height: 10,),
+                      const Text("Senior UX/UI Designer", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+                      const SizedBox(height: 5,),
+                      const Row(
                         children: [
                           Text("\$2500/m ", style: TextStyle(fontWeight: FontWeight.bold),),
                           Text("Toronto, Canada", style: TextStyle(color: Colors.grey),)

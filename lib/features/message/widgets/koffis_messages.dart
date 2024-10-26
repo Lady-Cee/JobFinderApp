@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:job_finder_app/features/message/widgets/koffis_call.dart';
 
@@ -11,7 +10,7 @@ class KoffisMessage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
+        title: const Row(
       //    mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             CircleAvatar(
@@ -29,7 +28,7 @@ class KoffisMessage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context){
-                        return KoffisCall();
+                        return const KoffisCall();
                       }),
                     );
                   },
@@ -41,8 +40,8 @@ class KoffisMessage extends StatelessWidget {
       body: SingleChildScrollView(
     child: Column(
         children: [
-          KoffiMessagesItems(),
-          SizedBox(height: 30,),
+          const KoffiMessagesItems(),
+          const SizedBox(height: 30,),
           Padding(
             padding: const EdgeInsets.only(left:16.0, right: 20.0),
             child: Row(
@@ -51,8 +50,8 @@ class KoffisMessage extends StatelessWidget {
                   onTap: () {},
                   child: Image.asset("assets/images/koffis_images/plus.png", width: 50,),
                 ),
-                SizedBox(width: 30,),
-                Expanded(
+                const SizedBox(width: 30,),
+                const Expanded(
                     child: TextField(
                       decoration: InputDecoration(
                         labelText: "Type a message",

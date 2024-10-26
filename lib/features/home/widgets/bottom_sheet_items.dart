@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BottomSheetItems extends StatelessWidget {
@@ -20,8 +19,8 @@ class BottomSheetItems extends StatelessWidget {
                 ),
                 width: 150,
                 height: 60,
-                padding: EdgeInsets.all(8),
-                child: Row(
+                padding: const EdgeInsets.all(8),
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(Icons.location_on_outlined, color: Colors.grey),
@@ -31,7 +30,7 @@ class BottomSheetItems extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(width: 15,),
+              const SizedBox(width: 15,),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -39,8 +38,8 @@ class BottomSheetItems extends StatelessWidget {
                 ),
                 width: 150,
                 height: 60,
-                padding: EdgeInsets.all(8),
-                child: Row(
+                padding: const EdgeInsets.all(8),
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(Icons.satellite, color: Colors.grey),
@@ -52,8 +51,8 @@ class BottomSheetItems extends StatelessWidget {
               ),
             ]
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 8.0, top: 16),
+          const Padding(
+            padding: EdgeInsets.only(right: 8.0, top: 16),
             child: Row(
              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

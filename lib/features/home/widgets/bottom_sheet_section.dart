@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:job_finder_app/features/home/widgets/bottom_sheet_jobtype.dart';
 
@@ -14,10 +13,10 @@ class BottomSheetSection extends StatelessWidget {
          child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
-          Text("Set Filters", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-          SizedBox(height: 15,),
-          Padding(
-            padding: const EdgeInsets.only(right:240.0),
+          const Text("Set Filters", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+          const SizedBox(height: 15,),
+          const Padding(
+            padding: EdgeInsets.only(right:240.0),
             child: Text("Category", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
           ),
           Padding(
@@ -28,7 +27,7 @@ class BottomSheetSection extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
               ),
               padding: const EdgeInsets.all(16.0),
-              child: Row(
+              child: const Row(
                 children: [
                   Expanded(
                       child: Text(
@@ -46,8 +45,8 @@ class BottomSheetSection extends StatelessWidget {
           Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(right:200.0),
+              const Padding(
+                padding: EdgeInsets.only(right:200.0),
                 child: Text("Sub Category", style: TextStyle(fontSize: 18),),
               ),
               Padding(
@@ -58,7 +57,7 @@ class BottomSheetSection extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8),
                   ),
                   padding: const EdgeInsets.all(16.0),
-                  child: Row(
+                  child: const Row(
                     children: [
                       Expanded(
                         child: Text(
@@ -71,8 +70,8 @@ class BottomSheetSection extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
+              const Padding(
+                padding: EdgeInsets.all(16.0),
                     child: Row(
                     children: [
                          Text(
@@ -88,8 +87,8 @@ class BottomSheetSection extends StatelessWidget {
                     ],
                   ),
                 ),
-              BottomSheetItems(),
-              BottomSheetJobtype(),
+              const BottomSheetItems(),
+              const BottomSheetJobtype(),
             ],
 
           ),
